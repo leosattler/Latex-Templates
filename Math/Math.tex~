@@ -1,0 +1,158 @@
+\documentclass{article}
+\usepackage{amsmath,amsfonts}
+\usepackage{graphicx}
+\usepackage[margin=1.0in,letterpaper]{geometry}
+\usepackage{float}
+
+% are used to denote commments, everything after it on this line is a comment and while not be processed 
+
+\begin{document}
+
+\title{Useful Equations}
+\author{Leonardo Sattler Cassara}
+\date{March 14, 2014}
+\maketitle
+
+\begin{equation}
+X= \frac{\cos \delta \sin (\alpha-\alpha_{0})}{\cos \delta_{0} \cos \delta \cos (\alpha-\alpha_{0})+\sin \delta \sin \delta_{0}} ,
+\label{eq:2}
+\end{equation}
+
+
+\begin{equation}
+Y=-\frac{\sin \delta_{0} \cos \delta \cos (\alpha-\alpha_{0})-\cos \delta_{0} \sin \delta}{\cos \delta_{0} \cos \delta \cos (\alpha-\alpha_{0})+\sin \delta \sin \delta_{0}} ,
+\label{eq:3}
+\end{equation}
+
+
+\begin{equation}
+x = f\left(\frac{X}{p}\right) + x_{0} ,
+\label{eq:4}
+\end{equation}
+
+
+\begin{equation}
+x = \frac{f}{p}\left(X\cos \theta-Y\sin \theta \right) + x_{0} ,
+\label{eq:6}
+\end{equation}
+
+\begin{equation}
+y = \frac{f}{p}\left(X\cos \theta-Y\sin \theta \right) + y_{0}.
+\label{eq:7}
+\end{equation}
+
+
+\begin{equation}
+\textbf{x}=\textbf{T}\textbf{X},
+\label{eq:ta}
+\end{equation}
+
+
+\begin{equation}
+\textbf{T} =
+ \begin{pmatrix}
+  (f/p)a_{11} & (f/p)a_{12} & x_{0} \\
+  (f/p)a_{21} & (f/p)a_{22} & y_{0} \\  
+  0 & 0 & 1
+ \end{pmatrix}.
+\end{equation}
+
+
+
+\begin{equation}
+\textbf{a}=\textbf{B}\textbf{c} ,
+\label{eq:9}
+\end{equation}
+
+
+
+\begin{equation}
+\textbf{a}=
+\begin{pmatrix}
+x_{1}\\
+x_{2}\\
+\vdots \\
+x_{N}
+\end{pmatrix}
+,
+\textbf{B}=
+\begin{pmatrix}
+(f/p)X_{1} & (f/p)Y_{1} & 1 \\
+(f/p)X_{2} & (f/p)Y_{2} & 1 \\ 
+\vdots & \vdots &  \vdots \\
+(f/p)X_{N} & (f/p)Y_{N} & 1
+\end{pmatrix}
+, and \textbf{ c}=
+\begin{pmatrix}
+a_{11}\\
+a_{12} \\    
+x_{0}
+\end{pmatrix}
+\end{equation}
+
+
+
+
+\begin{equation}
+\textbf{X}=\textbf{T}^{-1}\textbf{x}   .
+\label{eq:ta_inv}
+\end{equation}
+
+
+\begin{equation}
+\textbf{r}=\textbf{R}+\textbf{$\rho$s} ,
+\label{main}
+\end{equation}
+
+
+\begin{equation}
+\rho = k^{2}\left(\frac{1}{R^{3}}-\frac{1}{r^{3}}\right)\frac{\dot{
+    \textbf{s}}\cdot(\textbf{R}\times\textbf{s})}{\dot{ \textbf{s}}\cdot(\ddot{\textbf{s}}\times\textbf{s})},
+\end{equation}
+
+\begin{equation}
+r^{2}=\rho^{2}+R^{2}+2\rho \textbf{R}\cdot \textbf{s} ,
+\end{equation}
+
+
+
+\begin{equation}
+s=
+\begin{pmatrix}
+\cos \alpha \cos \delta\\  
+\sin \alpha \cos \delta\\
+\sin \delta \\ 
+\end{pmatrix} ,
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\dot{\textbf{s}_{2}}= \frac{ \tau_{3}(\textbf{s}_{2}-\textbf{s}_{1})}{\tau_{1}(\tau_{1}+\tau_{3})} + \frac{\tau_{1}(\textbf{s}_{3}-\textbf{s}_{2})}{\tau_{3}(\tau_{1}+\tau_{3})},\\
+\ddot{\textbf{s}_{2}}= \frac{2(\textbf{s}_{3}-\textbf{s}_{2})}{\tau_{3}(\tau_{1}+\tau_{3})} - \frac{2(\textbf{s}_{2}-\textbf{s}_{1})}{\tau_{1}(\tau_{1}+\tau_{3})} .
+\end{split}
+\end{equation}
+
+
+
+\begin{equation}
+\begin{split}
+\text{T=}
+\begin{pmatrix}
+0.9685  & 0.0235 & 507.6056 \\
+-0.0023 & 1.0123 & 517.7182 \\ 
+0 & 0 &  1 \\
+\end{pmatrix}
+\text{for day 17,}\\ 
+\text{and T=}
+\begin{pmatrix}
+0.9928 & 0.0394 & 504.6182 \\
+0.0193 & 0.9959 & 491.0023 \\ 
+0 & 0 &  1 \\
+\end{pmatrix}
+\text{for day 21.}
+\end{split}
+\end{equation} 
+
+
+\end{document}

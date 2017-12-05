@@ -1,0 +1,17 @@
+\begin{thebibliography}{2}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Geissler {et~al.}(1998)Geissler, Greenberg, Hoppa, Helfenstein,
+  McEwen, Pappalardo, Tufts, Ockert-Bell, Sullivank, Greeleyk, Belton, Denk,
+  Clark, Burs, Veverkat, \& Team}]{Geiss}
+Geissler, P.~E., Greenberg, R., Hoppa, G., {et~al.} 1998, Nature Vol. 391
+
+\bibitem[{Pappalardo {et~al.}(1999)Pappalardo, Belton, Brenemn, Carr, Chapman,
+  Collins, Denk, Fagents, Geissler, Giese, Greeley, Greenberg, Head,
+  Helfenstein, Hoppa, Kadel, Klaasen, Klemaszewski, Magee, McEwen, Moore,
+  Moore, Neukum, Phillips, Prockter, Schubert, Senske, Sullivan, Tufts, Turtle,
+  Wagner, \& Williams}]{Pap}
+Pappalardo, R.~T., Belton, M. J.~S., Brenemn, H.~H., {et~al.} 1999, Journal of
+  Geophysical Research, Vol. 104, No. E10, Pages 24,015-24,055
+
+\end{thebibliography}

@@ -1,0 +1,163 @@
+\documentclass{article}
+\usepackage{amsmath,amsfonts}
+\usepackage{graphicx}
+\usepackage[margin=1.0in,letterpaper]{geometry}
+\usepackage{float}
+
+% are used to denote commments, everything after it on this line is a comment and while not be processed 
+
+\begin{document}
+
+\title{Useful Tables}
+\author{Leonardo Sattler Cassara}
+\date{March 14, 2014}
+\maketitle
+
+
+
+\begin{table}[H]
+\center
+\begin{tabular}{|c|c|}
+\hline
+$x$    &   $y$    \\ 
+\hline
+$a_{11}=0.9870$ & $a_{21}=0.0310$ \\ 
+$a_{12}=-0.0475$ & $a_{22}=0.9894$ \\ 
+$x_{0}=518.3470$ & $y_{0}=543.8757$ \\ 
+\hline
+\end{tabular}
+\caption{Table template.} 
+\label{tab:1}
+\end{table}
+
+
+
+\begin{table}[H]
+\center
+\begin{tabular}{|c|c|c|}
+\hline
+~  &   $x$  & $y$ \\ 
+\hline
+rms error  &   0.663 & 0.543 \\ 
+\hline
+\end{tabular}
+\caption{Table template.} 
+\label{tab:2}
+\end{table}
+
+
+
+\begin{table}[H]
+\center
+\begin{tabular}{|c|c|}
+\hline
+\multicolumn{2}{|c|}{$R$=(0.9077, 0.3767, 0.1633)}\\
+\hline
+$\rho s$ in AU    &   $r$ in AU   \\ 
+\hline
+2.2079 & 2.4182 \\ 
+\hline
+\end{tabular}
+\caption{Table template.} 
+\label{tab:1}
+\end{table}
+
+
+
+\begin{table}[H]
+\center
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{3}{|c|}{Information Table}\\
+\hline
+  ~    & X Centroids & Y Centroids \\ 
+\hline
+Day 16 & 450.615 & 496.533\\ 
+Day 17 & 480.865 & 503.094\\ 
+Day 21 & 394.670 & 581.800\\ 
+\hline
+Day 16   &  \multicolumn{2}{|c|}{s=(0.39557559, -0.90165076, -0.17477377)}\\
+\hline
+Day 17   &  \multicolumn{2}{|c|}{s=(0.40000113, -0.89947704, -0.1758981)}\\
+\hline
+Day 21   &  \multicolumn{2}{|c|}{s=(0.41846033, -0.8902056 , -0.18006928)}\\
+\hline
+\end{tabular}
+\caption{Table template.} 
+\label{tab:1}
+\end{table}
+
+
+\begin{table}[H]
+\center
+\begin{tabular}{l r}
+\multicolumn{2}{c}{Nominal Properties of Spectrometer}\\
+~&~\\
+Quantity  &   Result \\ 
+\hline
+Echelle grating groove density $(1/\sigma)$ & 80 $mm^{-1}$ \\ 
+\hline
+Echelle blaze angle $(\theta_{b})$ & $64.4^{\circ}$  \\ 
+\hline
+Fiber diameter $(d_{fiber})$ & 50 $\mu m$ \\ 
+\hline
+Collimator focal length $(f_{col})$ & 100 $mm$ \\ 
+\hline
+Camera focal length $(f_{cam})$ & 135 $mm$  \\ 
+\hline
+Apogee CCD pixel size & 13 $\mu m$  \\ 
+\hline
+$2\theta$ &  $22^{\circ}$  \\ 
+\hline
+\end{tabular}
+\caption{Table template.} 
+\label{tab:1}
+\end{table}
+
+\begin{table}[H]
+\center
+\begin{tabular}{l r}
+\multicolumn{2}{c}{Result of Calculated Quantities for $\lambda = 632.8 nm$}\\
+~&~\\
+Properties   &   Values \\ 
+\hline
+Order of Interference & $m = 35$\\ 
+\hline
+Resolution related to optical fiber & 2.1951812525 $pixels$\\ 
+\hline
+Spectral dispersion & 0.121331883387 $nm/pixel$\\ 
+\hline
+Spectral Resolving Power & 14058.352926\\ 
+\hline
+Spectral Resolution & 21.3396264541 $km/s$\\ 
+\hline
+Width of order on CCD in $nm$ & 0.454688925737 $nm$  \\ 
+\hline
+Width of order on CCD in $pixels$ &  3.74748098391 $pixels$ \\ 
+\hline
+\end{tabular}
+\caption{Table template.} 
+\label{tab:2}
+\end{table}
+
+
+\begin{table}[H]
+\center
+\begin{tabular}{l r}
+\multicolumn{2}{c}{Result of Graph Analysis}\\
+~&~\\
+Properties   &   Values \\ 
+\hline
+Spectral dispersion & 0.028074 $nm/pixel$\\ 
+\hline
+Width of order on CCD in $nm$ & 0.0678826 $nm$  \\ 
+\hline
+Width of order on CCD in $pixels$ &  2.418 $pixels$ \\ 
+\hline
+\end{tabular}
+\caption{Table template.} 
+\label{tab:3}
+\end{table}
+
+
+\end{document}

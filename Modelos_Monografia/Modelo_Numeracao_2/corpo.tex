@@ -1,0 +1,191 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Leonardo Sattler Cassará
+% UFRJ, Observatório do Valongo. Rio de Janeiro, 2014
+% Monografia criada em Latex, utilizando a classe monografia.cls
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%% Pacotes e classe %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[hidelinks,12pt,a4paper]{monografia_ov}
+\usepackage[brazilian]{babel}
+\usepackage[utf8,latin1]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[all]{hypcap} % for going to the top of an image when a figure reference is clicked
+\usepackage{latexsym}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{./tex/natbib}
+\bibpunct{(}{)}{;}{a}{}{,} % to follow the A&A style
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\bacharelado  % Declarando o tipo de documento (via classe mono.)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Capa %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\instituicao{Universidade Federal do Rio de Janeiro}
+\centro{Centro de Ciências Matemáticas e da Terra}
+\unidadeacademica{Observatório do Valongo}
+\departamento{Departamento de Astronomia}
+
+\titulo{Tí­tulo do Trabalho}
+%\subtitulo{Subtítulo}  % Comment off se houver subtítulo
+
+\autor{Leonardo Sattler Cassará} 
+\instituicaoautor{OV/UFRJ}
+
+\orientador{Wladimir Lyra}
+\instituicaoorientador{JPL/Caltech}
+
+%--------------------------- Para Versão Final --------------------------
+% Se desejar a versão final (com data da defesa e nome dos examinadores
+% na capa), basta retirar o comentário de \versaofinal{}.
+% Obs.: Deixe todo o resto do jeito que está!
+
+%\versaofinal{}  %% Comment off = Versão final!
+
+\datadefesa{11/11/2014}
+
+\examinadorum{Nome do Examinador 1}
+\instituicaoum{Instituição do exam. um}
+
+\examinadordois{Nome do Examinador 2}
+\instituicaodois{Instituição do exam. dois}
+
+\examinadortres{Nome do Examinador 3} 
+\instituicaotres{Instituição do exam. tres}
+
+% Títulos talvez não sejam necessários
+%\ttexaminadorum{Título do Examinador 1}
+%\ttexaminadordois{Título do Examinador 2}
+%\ttexaminadortres{Título do Examinador 3} % se for tese de doutorado
+%------------------------------------------------------------------------
+
+\cidade{Rio de Janeiro}
+\pais{Brasil}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Contracapa %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\autor{Leonardo Sattler Cassará}
+
+\titulo{Tí­tulo do Trabalho}
+%\subtitulo{Subtítulo}  % Comment off se houver subtítulo
+
+\curso{Astronomia}
+\sigla{UFRJ}
+
+\orientador{Wladimir Lyra}
+
+\cidade{Rio de Janeiro}
+\ano{2014}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%% Resumo, Abstract e Agradecimento %%%%%%%%%%%%%%%%%%%%
+
+%------------------------------------------------------------------------
+%% Comando para aparecer título da seção NO CENTRO DA PÁGINA, para 
+%% resumo,  abstract e agradecimentos. Se desejar retirar 
+%% configuração, basta comentar as seguintes linhas.
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\filcenter}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}
+  {0pt}{0pt}{0pt}
+%------------------------------------------------------------------------
+
+\pagenumbering{roman}
+
+%% \addcontentsline{}{}{} adiciona seção ao sumário. Se não desejar 
+%% Lista de Figuras ou de Tabelas no sumário, basta comentar
+%% este comando.
+
+\resumo{Resumo}
+\input{./tex/resumo.tex}
+
+\resumo{Abstract}
+\input{./tex/abstract.tex}
+
+\agradecimento{Agradecimentos}
+\input{./tex/agradecimento.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%% Sumário, Figuras e Tabelas %%%%%%%%%%%%%%%%%%%%%%
+
+%------------------------------------------------------------------------
+%% Comando para aparecer Capítulo + número no início de cada
+%% seção, com o título logo abaixo. Desta forma somente o título 
+%% aparece no sumário. Se desejar retirar essa configuração, basta
+%% comentar as seguintes linhas.
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+%------------------------------------------------------------------------
+
+%% \addcontentsline{}{}{} adiciona seção ao sumário. Se não desejar 
+%% Lista de Figuras ou de Tabelas no sumário, basta comentar
+%% este comando.
+
+\tableofcontents  %% Criando Sumário
+%% Adiciona Sumário (não incluído):
+%\addcontentsline{toc}{chapter}{Sumário} 
+
+\listoffigures  
+%% Adiciona Lista de Figuras ao sumário:
+%\addcontentsline{toc}{chapter}{\listfigurename}
+
+\listoftables
+%% Adiciona Lista de Tabelas ao sumário:
+%\addcontentsline{toc}{chapter}{\listtablename}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%% Introdução, Desenvolvimento e Conclusão %%%%%%%%%%%%%%%%
+
+\newpage  
+\renewcommand{\thepage}{\arabic{page}}% Arabic numerals for page counter
+
+\input{./tex/capitulo1.tex}
+\input{./tex/capitulo2.tex}
+\input{./tex/capitulo3.tex}
+\input{./tex/capitulo4.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Apêndices %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\appendix
+\input{./tex/apendicea.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Bibliografia %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Referências Bibliográficas} % Faz aparecer no sumário
+
+\bibliographystyle{./tex/aa} % style aa.bst
+\bibliography{./tex/my_mono_ref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+\end{document}
+%

@@ -1,0 +1,303 @@
+\documentclass{article}
+\usepackage{amsmath,amsfonts}
+\usepackage{graphicx}
+\usepackage[margin=1.0in,letterpaper]{geometry}
+\usepackage{float}
+
+% are used to denote commments, everything after it on this line is a comment and while not be processed 
+
+\begin{document}
+
+\title{Useful Tables and Equations}
+\author{Leonardo Sattler Cassara}
+\date{March 14, 2014}
+\maketitle
+
+\begin{equation}
+X= \frac{\cos \delta \sin (\alpha-\alpha_{0})}{\cos \delta_{0} \cos \delta \cos (\alpha-\alpha_{0})+\sin \delta \sin \delta_{0}} ,
+\label{eq:2}
+\end{equation}
+
+
+\begin{equation}
+Y=-\frac{\sin \delta_{0} \cos \delta \cos (\alpha-\alpha_{0})-\cos \delta_{0} \sin \delta}{\cos \delta_{0} \cos \delta \cos (\alpha-\alpha_{0})+\sin \delta \sin \delta_{0}} ,
+\label{eq:3}
+\end{equation}
+
+
+\begin{equation}
+x = f\left(\frac{X}{p}\right) + x_{0} ,
+\label{eq:4}
+\end{equation}
+
+
+\begin{equation}
+x = \frac{f}{p}\left(X\cos \theta-Y\sin \theta \right) + x_{0} ,
+\label{eq:6}
+\end{equation}
+
+\begin{equation}
+y = \frac{f}{p}\left(X\cos \theta-Y\sin \theta \right) + y_{0}.
+\label{eq:7}
+\end{equation}
+
+
+\begin{equation}
+\textbf{x}=\textbf{T}\textbf{X},
+\label{eq:ta}
+\end{equation}
+
+
+\begin{equation}
+\textbf{T} =
+ \begin{pmatrix}
+  (f/p)a_{11} & (f/p)a_{12} & x_{0} \\
+  (f/p)a_{21} & (f/p)a_{22} & y_{0} \\  
+  0 & 0 & 1
+ \end{pmatrix}.
+\end{equation}
+
+
+
+\begin{equation}
+\textbf{a}=\textbf{B}\textbf{c} ,
+\label{eq:9}
+\end{equation}
+
+
+
+\begin{equation}
+\textbf{a}=
+\begin{pmatrix}
+x_{1}\\
+x_{2}\\
+\vdots \\
+x_{N}
+\end{pmatrix}
+,
+\textbf{B}=
+\begin{pmatrix}
+(f/p)X_{1} & (f/p)Y_{1} & 1 \\
+(f/p)X_{2} & (f/p)Y_{2} & 1 \\ 
+\vdots & \vdots &  \vdots \\
+(f/p)X_{N} & (f/p)Y_{N} & 1
+\end{pmatrix}
+, and \textbf{ c}=
+\begin{pmatrix}
+a_{11}\\
+a_{12} \\    
+x_{0}
+\end{pmatrix}
+\end{equation}
+
+
+
+
+\begin{equation}
+\textbf{X}=\textbf{T}^{-1}\textbf{x}   .
+\label{eq:ta_inv}
+\end{equation}
+
+
+\begin{equation}
+\textbf{r}=\textbf{R}+\textbf{$\rho$s} ,
+\label{main}
+\end{equation}
+
+
+\begin{equation}
+\rho = k^{2}\left(\frac{1}{R^{3}}-\frac{1}{r^{3}}\right)\frac{\dot{
+    \textbf{s}}\cdot(\textbf{R}\times\textbf{s})}{\dot{ \textbf{s}}\cdot(\ddot{\textbf{s}}\times\textbf{s})},
+\end{equation}
+
+\begin{equation}
+r^{2}=\rho^{2}+R^{2}+2\rho \textbf{R}\cdot \textbf{s} ,
+\end{equation}
+
+
+
+\begin{equation}
+s=
+\begin{pmatrix}
+\cos \alpha \cos \delta\\  
+\sin \alpha \cos \delta\\
+\sin \delta \\ 
+\end{pmatrix} ,
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\dot{\textbf{s}_{2}}= \frac{ \tau_{3}(\textbf{s}_{2}-\textbf{s}_{1})}{\tau_{1}(\tau_{1}+\tau_{3})} + \frac{\tau_{1}(\textbf{s}_{3}-\textbf{s}_{2})}{\tau_{3}(\tau_{1}+\tau_{3})},\\
+\ddot{\textbf{s}_{2}}= \frac{2(\textbf{s}_{3}-\textbf{s}_{2})}{\tau_{3}(\tau_{1}+\tau_{3})} - \frac{2(\textbf{s}_{2}-\textbf{s}_{1})}{\tau_{1}(\tau_{1}+\tau_{3})} .
+\end{split}
+\end{equation}
+
+
+
+\begin{equation}
+\begin{split}
+\text{T=}
+\begin{pmatrix}
+0.9685  & 0.0235 & 507.6056 \\
+-0.0023 & 1.0123 & 517.7182 \\ 
+0 & 0 &  1 \\
+\end{pmatrix}
+\text{for day 17,}\\ 
+\text{and T=}
+\begin{pmatrix}
+0.9928 & 0.0394 & 504.6182 \\
+0.0193 & 0.9959 & 491.0023 \\ 
+0 & 0 &  1 \\
+\end{pmatrix}
+\text{for day 21.}
+\end{split}
+\end{equation} 
+
+
+\begin{table}[H]
+\center
+\begin{tabular}{|c|c|}
+\hline
+$x$    &   $y$    \\ 
+\hline
+$a_{11}=0.9870$ & $a_{21}=0.0310$ \\ 
+$a_{12}=-0.0475$ & $a_{22}=0.9894$ \\ 
+$x_{0}=518.3470$ & $y_{0}=543.8757$ \\ 
+\hline
+\end{tabular}
+\caption{Table template.} 
+\label{tab:1}
+\end{table}
+
+
+
+\begin{table}[H]
+\center
+\begin{tabular}{|c|c|c|}
+\hline
+~  &   $x$  & $y$ \\ 
+\hline
+rms error  &   0.663 & 0.543 \\ 
+\hline
+\end{tabular}
+\caption{Table template.} 
+\label{tab:2}
+\end{table}
+
+
+
+\begin{table}[H]
+\center
+\begin{tabular}{|c|c|}
+\hline
+\multicolumn{2}{|c|}{$R$=(0.9077, 0.3767, 0.1633)}\\
+\hline
+$\rho s$ in AU    &   $r$ in AU   \\ 
+\hline
+2.2079 & 2.4182 \\ 
+\hline
+\end{tabular}
+\caption{Table template.} 
+\label{tab:1}
+\end{table}
+
+
+
+\begin{table}[H]
+\center
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{3}{|c|}{Information Table}\\
+\hline
+  ~    & X Centroids & Y Centroids \\ 
+\hline
+Day 16 & 450.615 & 496.533\\ 
+Day 17 & 480.865 & 503.094\\ 
+Day 21 & 394.670 & 581.800\\ 
+\hline
+Day 16   &  \multicolumn{2}{|c|}{s=(0.39557559, -0.90165076, -0.17477377)}\\
+\hline
+Day 17   &  \multicolumn{2}{|c|}{s=(0.40000113, -0.89947704, -0.1758981)}\\
+\hline
+Day 21   &  \multicolumn{2}{|c|}{s=(0.41846033, -0.8902056 , -0.18006928)}\\
+\hline
+\end{tabular}
+\caption{Table template.} 
+\label{tab:1}
+\end{table}
+
+
+\begin{table}[H]
+\center
+\begin{tabular}{l r}
+\multicolumn{2}{c}{Nominal Properties of Spectrometer}\\
+~&~\\
+Quantity  &   Result \\ 
+\hline
+Echelle grating groove density $(1/\sigma)$ & 80 $mm^{-1}$ \\ 
+\hline
+Echelle blaze angle $(\theta_{b})$ & $64.4^{\circ}$  \\ 
+\hline
+Fiber diameter $(d_{fiber})$ & 50 $\mu m$ \\ 
+\hline
+Collimator focal length $(f_{col})$ & 100 $mm$ \\ 
+\hline
+Camera focal length $(f_{cam})$ & 135 $mm$  \\ 
+\hline
+Apogee CCD pixel size & 13 $\mu m$  \\ 
+\hline
+$2\theta$ &  $22^{\circ}$  \\ 
+\hline
+\end{tabular}
+\caption{Table template.} 
+\label{tab:1}
+\end{table}
+
+\begin{table}[H]
+\center
+\begin{tabular}{l r}
+\multicolumn{2}{c}{Result of Calculated Quantities for $\lambda = 632.8 nm$}\\
+~&~\\
+Properties   &   Values \\ 
+\hline
+Order of Interference & $m = 35$\\ 
+\hline
+Resolution related to optical fiber & 2.1951812525 $pixels$\\ 
+\hline
+Spectral dispersion & 0.121331883387 $nm/pixel$\\ 
+\hline
+Spectral Resolving Power & 14058.352926\\ 
+\hline
+Spectral Resolution & 21.3396264541 $km/s$\\ 
+\hline
+Width of order on CCD in $nm$ & 0.454688925737 $nm$  \\ 
+\hline
+Width of order on CCD in $pixels$ &  3.74748098391 $pixels$ \\ 
+\hline
+\end{tabular}
+\caption{Table template.} 
+\label{tab:2}
+\end{table}
+
+
+\begin{table}[H]
+\center
+\begin{tabular}{l r}
+\multicolumn{2}{c}{Result of Graph Analysis}\\
+~&~\\
+Properties   &   Values \\ 
+\hline
+Spectral dispersion & 0.028074 $nm/pixel$\\ 
+\hline
+Width of order on CCD in $nm$ & 0.0678826 $nm$  \\ 
+\hline
+Width of order on CCD in $pixels$ &  2.418 $pixels$ \\ 
+\hline
+\end{tabular}
+\caption{Table template.} 
+\label{tab:3}
+\end{table}
+
+
+\end{document}
